@@ -118,8 +118,8 @@ export default defineNuxtConfig({
   //
   sanity: {
     projectId: process.env.SANITY_STUDIO_PROJECT_ID,
-    dataset: 'production',
-    apiVersion: '2025-04-30',
+    dataset: process.env.SANITY_STUDIO_DATASET,
+    apiVersion: process.env.SANITY_STUDIO_API_VERSION,
     // useCdn: false,
     visualEditing: {
       token: process.env.SANITY_STUDIO_PREVIEW_TOKEN,

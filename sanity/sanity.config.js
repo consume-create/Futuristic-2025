@@ -39,7 +39,7 @@ export default defineConfig({
   name: 'default',
   title: 'Futuristic Films',
   projectId: process.env.SANITY_STUDIO_PROJECT_ID,
-  dataset: 'production',
+  dataset: process.env.SANITY_STUDIO_DATASET,
   plugins: [
     presentationTool({
       previewUrl: {

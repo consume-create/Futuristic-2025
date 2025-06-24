@@ -26,6 +26,7 @@ const error = useError();
     font-size: 14px;
     margin-top: 0.5em;
     text-decoration: underline;
+    text-underline-offset: 4px;
   }
 }
 

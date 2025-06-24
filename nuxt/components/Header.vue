@@ -41,6 +41,7 @@ header#header {
         a {
           &.router-link-active {
             text-decoration: underline;
+            text-underline-offset: 4px;
           }
         }
       }

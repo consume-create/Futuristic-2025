@@ -88,6 +88,7 @@ const props = defineProps({
       margin-top: 0.5em;
       font-size: 14px;
       text-decoration: underline;
+      text-underline-offset: 4px;
     }
   }
 }

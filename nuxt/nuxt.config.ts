@@ -15,7 +15,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       isDev: process.env.NODE_ENV === 'development',
-      studioUrl: process.env.NODE_ENV === 'development' ? 'http://localhost:3333' : '<NETLIFY APP URL>'
+      studioUrl: process.env.NODE_ENV === 'development' ? 'http://localhost:3333' : 'https://futuristic-website.sanity.studio'
     }
   },
   //

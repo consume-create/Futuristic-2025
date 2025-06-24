@@ -7,6 +7,14 @@ import { presentationTool, defineDocuments, defineLocations, } from 'sanity/pres
 import { media } from 'sanity-plugin-media';
 import { visionTool } from '@sanity/vision';
 
+// Singletons...
+const singletonTypes = new Set(schemaTypes.reduce((filtered, schemaType) => {
+  if (schemaType.singleton) {
+    filtered.push(schemaType.name);
+  }
+  return filtered;
+}, []));
+
 // Define the home location for the presentation tool
 // const homeLocation = {
 //   title: 'Home (Location)',
@@ -31,7 +39,7 @@ export default defineConfig({
   name: 'default',
   title: 'Futuristic Films',
   projectId: process.env.SANITY_STUDIO_PROJECT_ID,
-  dataset: process.env.SANITY_DATASET,
+  dataset: 'production',
   plugins: [
     presentationTool({
       previewUrl: {

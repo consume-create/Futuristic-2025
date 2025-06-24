@@ -14,8 +14,7 @@ export default defineNuxtConfig({
   //
   runtimeConfig: {
     public: {
-      isDev: process.env.NODE_ENV === 'development',
-      studioUrl: process.env.NODE_ENV === 'development' ? 'http://localhost:3333' : 'https://futuristic-website.sanity.studio'
+      isDev: process.env.NODE_ENV === 'development'
     }
   },
   //
@@ -119,13 +118,13 @@ export default defineNuxtConfig({
   //
   sanity: {
     projectId: process.env.SANITY_STUDIO_PROJECT_ID,
-    dataset: process.env.SANITY_DATASET,
-    apiVersion: process.env.SANITY_API_VERSION,
+    dataset: 'production',
+    apiVersion: '2025-04-30',
     // useCdn: false,
     visualEditing: {
       token: process.env.SANITY_STUDIO_PREVIEW_TOKEN,
       studioUrl: process.env.SANITY_STUDIO_URL,
-      stega: true
+      // stega: true
     }
   }
 });

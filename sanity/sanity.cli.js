@@ -3,8 +3,7 @@ import { defineCliConfig } from 'sanity/cli';
 export default defineCliConfig({
   api: {
     projectId: process.env.SANITY_STUDIO_PROJECT_ID,
-    dataset: process.env.SANITY_DATASET
+    dataset: 'production'
   },
-  studioHost: process.env.SANITY_STUDIO_URL,
-  autoUpdates: true
+  studioHost: 'futuristic-website'
 })

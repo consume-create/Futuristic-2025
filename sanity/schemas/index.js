@@ -1,5 +1,5 @@
 // Site
-import site from './settings/site';
+import site from './settings/settings';
 
 // Pages
 import home from './pages/home';

@@ -16,14 +16,14 @@
   "dependencies": {
     "@sanity/color-input": "latest",
     "@sanity/icons": "latest",
-    "@sanity/vision": "latest",
+    "@sanity/vision": "^3.94.2",
     "pluralize-esm": "latest",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "sanity": "latest",
+    "sanity": "^3.94.2",
     "sanity-plugin-media": "latest",
     "sanity-plugin-prefixed-slug": "latest",
-    "styled-components": "latest"
+    "styled-components": "^6.1.19"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "latest",

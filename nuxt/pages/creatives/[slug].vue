@@ -1,8 +1,14 @@
 <template>
   <div class="page">
-    <template v-if="pageData">
-      <h1>Dynamic Page - {{ data.title }}</h1>
-    </template>
+    <Placeholder
+      title="Creative Person’s Info / Two Column"
+    />
+    <Placeholder
+      :fullscreen="true"
+      :sticky="true"
+      title="Creative Person’s Project Grid / Scroll FX"
+    />
+    <Footer />
   </div>
 </template>
 

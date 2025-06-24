@@ -46,7 +46,7 @@ function onKeydown(e) {
   .grid-line {
     width: 1px;
     height: 100%;
-    background-color: rgba(#3333ff, 18%);
+    background-color: rgba(cyan, 50%);
 
     &:first-child,
     &:last-child {

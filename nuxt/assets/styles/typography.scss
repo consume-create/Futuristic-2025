@@ -30,8 +30,12 @@ $max: 1680px;
 
 body {
   font-family: $helvetica;
-  @include fluid-type($min, $max, 12px, 16px);
+  @include fluid-type($min, $max, 14px, 20px);
   line-height: 1.325em;
+}
+
+strong {
+  font-weight: bold;
 }
 
 h1 {
@@ -46,4 +50,8 @@ h2 {
   font-weight: bold;
   @include fluid-type($min, $max, 24px, 40px);
   line-height: 1em;
+}
+
+nav {
+  font-size: 14px;
 }

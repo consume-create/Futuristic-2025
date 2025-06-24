@@ -3,6 +3,7 @@
     <DevOnly>
       <GridOverlay />
     </DevOnly>
+    <Header />
     <NuxtPage />
   </div>
 </template>

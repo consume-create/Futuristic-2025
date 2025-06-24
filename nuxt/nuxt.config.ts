@@ -55,12 +55,15 @@ export default defineNuxtConfig({
         { hid: 'og:title', property: 'og:title', content: site_name },
         { hid: 'og:description', property: 'og:description', content: '' },
         { hid: 'og:url', property: 'og:url', content: site_url },
-        { name: 'twitter:card', content: 'summary_large_image' }
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'apple-mobile-web-app-title', content:'Futuristic Films' }
       ],
       link: [
-        // Replace with favicon(s): https://realfavicongenerator.net/
-        // Tell browser to use this empty data instead of requesting a favicon file, preventing the default favicon or a broken image from appearing
-        { rel: 'icon', href: 'data:,' }
+        { rel: 'icon', type: 'image/png', sizes: '96x96', href: '/favicon-96x96.png' },
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+        { rel: 'shortcut icon', href: '/favicon.ico' },
+        { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+        { rel: 'manifest', href: '/site.webmanifest' }
       ]
     },
     pageTransition: {
@@ -117,7 +120,7 @@ export default defineNuxtConfig({
   sanity: {
     projectId: process.env.SANITY_STUDIO_PROJECT_ID,
     dataset: process.env.SANITY_DATASET,
-    // apiVersion: process.env.SANITY_API_VERSION,
+    apiVersion: process.env.SANITY_API_VERSION,
     // useCdn: false,
     visualEditing: {
       token: process.env.SANITY_STUDIO_PREVIEW_TOKEN,

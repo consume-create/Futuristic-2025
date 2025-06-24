@@ -37,6 +37,12 @@ header#header {
 
       li {
         margin-left: 2em;
+
+        a {
+          &.router-link-active {
+            text-decoration: underline;
+          }
+        }
       }
     }
   }

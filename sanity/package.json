@@ -1,0 +1,41 @@
+{
+  "name": "futuristic-films",
+  "private": true,
+  "version": "1.0.0",
+  "main": "package.json",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "sanity dev",
+    "start": "sanity start",
+    "build": "sanity build",
+    "deploy": "sanity deploy"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/color-input": "latest",
+    "@sanity/icons": "latest",
+    "@sanity/vision": "latest",
+    "pluralize-esm": "latest",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sanity": "latest",
+    "sanity-plugin-media": "latest",
+    "sanity-plugin-prefixed-slug": "latest",
+    "styled-components": "latest"
+  },
+  "devDependencies": {
+    "@sanity/eslint-config-studio": "latest",
+    "@types/react": "latest",
+    "eslint": "latest",
+    "prettier": "latest",
+    "typescript": "latest"
+  },
+  "prettier": {
+    "semi": false,
+    "printWidth": 500,
+    "bracketSpacing": false,
+    "singleQuote": true
+  }
+}

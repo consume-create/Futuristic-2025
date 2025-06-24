@@ -1,0 +1,94 @@
+:root {
+  --scrollbar-width: 0px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: $black;
+  background-color: $white;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+::selection {
+  background: $black;
+  color: $white;
+}
+
+::-moz-selection {
+  background: $black;
+  color: $white;
+}
+
+// --------------------------------------------
+// Page transition
+// --------------------------------------------
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity $speed-666 $evil-ease;
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+}
+
+// --------------------------------------------
+// Links
+// --------------------------------------------
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: 0;
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+
+// --------------------------------------------
+// Rich text
+// --------------------------------------------
+
+.pre {
+  white-space: pre-line;
+}
+
+// --------------------------------------------
+// Button
+// --------------------------------------------
+
+button {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-transform: inherit;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: 0;
+  appearance: none;
+}
+
+.gutter {
+  margin: 0 span(1);
+}
+
+.pad-t {
+  padding-top: span(1);
+}

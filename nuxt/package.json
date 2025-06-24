@@ -1,0 +1,32 @@
+{
+  "name": "futuristic-films",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxtjs/sanity": "latest",
+    "@nuxtjs/sitemap": "latest",
+    "@pinia/nuxt": "latest",
+    "@portabletext/to-html": "latest",
+    "body-scroll-lock": "latest",
+    "nuxt": "latest",
+    "nuxt-gtag": "latest",
+    "pinia": "latest",
+    "vue": "latest",
+    "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@nuxtjs/dotenv": "latest",
+    "sass": "1.58.3"
+  },
+  "overrides": {
+    "vue": "latest"
+  }
+}
